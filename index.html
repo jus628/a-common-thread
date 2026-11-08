@@ -16,13 +16,22 @@
             <img src="images/js-logo.png" alt="JS Logo">
         </a>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="materials.html">Materials</a>
-            <a href="objects.html">Objects</a>
-            <a href="about.html">About</a>
-        </nav>
+        <details class="menu">
+            <summary class="menu-icon" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </summary>
+
+            <nav class="menu-links">
+                <a href="index.html">Home</a>
+                <a href="materials.html">Materials</a>
+                <a href="objects.html">Objects</a>
+                <a href="about.html">About</a>
+            </nav>
+        </details>
     </header>
+
 
     <main>
         <h1>A COMMON THREAD</h1>
@@ -34,7 +43,28 @@
     </main>
 
     <footer>
-        <p>EVERY OBJECT HAS A STORY. FOLLOW THE THREAD.</p>
+       
+<footer class="site-footer">
+    <p class="footer-tagline">
+        EVERY OBJECT HAS A STORY. FOLLOW THE THREAD.
+    </p>
+
+    <div class="footer-bottom">
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="materials.html">Materials</a>
+            <a href="objects.html">Objects</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <a class="footer-portfolio"
+           href="https://juliasalinero.com"
+           target="_blank"
+           rel="noopener noreferrer">
+            juliasalinero.com
+        </a>
+    </div>
+</footer>
     </footer>
 </body>
 </html>
