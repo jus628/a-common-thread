@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Common Thread</title>
     <link rel="stylesheet" href="css/style.css">
+   <!-- p5.js library for drawing the network -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js" defer></script>
+    <!-- File for connecting the circles -->
     <script src="js/network.js" defer></script>
     <link rel="icon" type="image/png" href="images/js-logo.png">
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <a href="index.html" class="logo">
             <img src="images/js-logo.png" alt="JS Logo">
         </a>
@@ -37,14 +40,11 @@
         <h1>A COMMON THREAD</h1>
         <p>A collection of things I've made, and the materials that connect them.</p>
 
-        <section class="network">
-            <!-- Interactive network goes here -->
-        </section>
-
         <section class="network-section">
             <div class="network">
 
-                <svg class="network-lines" aria-hidden="true"></svg>
+                <!-- p5.js canvas to draw the connecting lines -->
+                <div id="network-canvas" aria-hidden="true"></div>
 
                 <!-- MATERIALS -->
                 <a href="materials/chipboard.html" class="node material" id="chipboard">
@@ -101,29 +101,27 @@
 
     </main>
 
-    <footer>
-       
-<footer class="site-footer">
-    <p class="footer-tagline">
-        EVERY OBJECT HAS A STORY. FOLLOW THE THREAD.
-    </p>
+    <!-- Website footer -->
+    <footer class="site-footer">
+        <p class="footer-tagline">
+            EVERY OBJECT HAS A STORY. FOLLOW THE THREAD.
+        </p>
 
-    <div class="footer-bottom">
-        <nav class="footer-nav" aria-label="Footer navigation">
-            <a href="index.html">Home</a>
-            <a href="materials.html">Materials</a>
-            <a href="objects.html">Objects</a>
-            <a href="about.html">About</a>
-        </nav>
+        <div class="footer-bottom">
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="materials.html">Materials</a>
+                <a href="objects.html">Objects</a>
+                <a href="about.html">About</a>
+            </nav>
 
-        <a class="footer-portfolio"
-           href="https://juliasalinero.com"
-           target="_blank"
-           rel="noopener noreferrer">
-            juliasalinero.com
-        </a>
-    </div>
-</footer>
+            <a class="footer-portfolio"
+            href="https://juliasalinero.com"
+            target="_blank"
+            rel="noopener noreferrer">
+                juliasalinero.com
+            </a>
+        </div>
     </footer>
 </body>
 </html>
