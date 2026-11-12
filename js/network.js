@@ -28,10 +28,20 @@ function draw() {
 
     // Connection between Eterna projects
     connectCircles("bracelet", "packaging");
+
+    // Dotted lines for related projects
+    connectCircles("suitcase", "luggage-tags", true);
+    connectCircles("posters", "letter-exchange", true);
+}
+
+// p5 built in fucitonfor canvas when the browser window changes size
+function windowResized() {
+    let network = document.querySelector(".network");
+    resizeCanvas(network.clientWidth, network.clientHeight);
 }
 
 // Draw line btwn two HTML circles
-function connectCircles(firstId, secondId) {
+function connectCircles(firstId, secondId, dotted = false) {
 
     // Find the circles
     let first = document.getElementById(firstId);
@@ -52,6 +62,13 @@ function connectCircles(firstId, secondId) {
     let x2 = b.left + b.width / 2 - area.left;
     let y2 = b.top + b.height / 2 - area.top;
 
+    // Solid vs dotted depdenidng on connection type
+    if(dotted){
+        drawingContext.setLineDash([4,4]);
+    }
+    else{
+        drawingContext.setLineDash([])
+    }
     // Draw the line
     line(x1, y1, x2, y2);
 }
