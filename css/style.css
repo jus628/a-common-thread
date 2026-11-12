@@ -289,22 +289,22 @@ h1 {
     height: 140px;
 }
 
-/* MATERIALS PAGE */
-.materials-page {
+/* MATERIALS + OBJECTS PAGE */
+.materials-page, .objects-page {
     padding: 20px 3% 40px;
 }
 /* Page heading and introduction */
-.materials-intro {
+.page-intro {
     position: relative;
     text-align: right;
     padding: 20px 0 35px;
 }
-.materials-intro h1 {
+.page-intro h1 {
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: 48px;
     margin: 0 0 12px;
 }
-.materials-intro p {
+.page-intro p {
     font-family: "Manrope", sans-serif;
     font-size: 20px;
     line-height: 1.5;
@@ -324,27 +324,27 @@ h1 {
 .back-link:hover {
     text-decoration: underline;
 }
-/* Three material images */
-.materials-list {
+/* Material/Object images */
+.image-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.material-card {
+.image-card {
     position: relative;
     display: block;
     width: 100%;
     height: 300px;
     overflow: hidden;
 }
-.material-card img {
+.image-card img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-/* Material names */
-.material-card h2 {
+/* Material/Object names */
+.image-card h2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -354,28 +354,29 @@ h1 {
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: 64px;
     opacity: 0;
+    text-align: center;
 }
 /* Hover effect */
-.material-card:hover img,
-.material-card:focus-visible img {
+.image-card:hover img,
+.image-card:focus-visible img {
     filter: brightness(0.4);
 }
-.material-card:hover h2,
-.material-card:focus-visible h2 {
+.image-card:hover h2,
+.image-card:focus-visible h2 {
     opacity: 1;
 }
 /* Mobile */
 @media (max-width: 600px) {
-    .materials-intro h1 {
+    .page-intro h1 {
         font-size: 36px;
     }
-    .materials-intro {
+    .page-intro {
         padding-top: 60px;
     }
-    .material-card {
+    .image-card {
         height: 200px;
     }
-    .material-card h2 {
+    .image-card h2 {
         font-size: 36px;
     }
 }
