@@ -664,6 +664,23 @@ h1 {
     height: 380px;
 }
 
+/* FOUR IMAGE ROW */
+.object-image-four {
+    grid-template-columns: 1.1fr 1fr 0.7fr 0.7fr;
+}
+/* Related object image and link */
+.object-related-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.object-related-row img {
+    width: 35%;
+    height: 220px;
+    object-fit: cover;
+}
+
 /* ETERNA BRACELET SPECIFICS */
 .eterna-bracelet-page .object-gallery {
     grid-template-columns: 1fr 1fr 0.45fr;
