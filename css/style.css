@@ -640,10 +640,28 @@ h1 {
     color: white;
 }
 
-/* MORF SPECIFIC CHANGES*/
-.chipboard-morf-page .object-image-pair {
+/* THREE IMAGES ROW */
+.object-image-three {
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 0;
+}
+.object-image-three img {
+    height: 200px;
+}
+/* Tall image beside details */
+.object-gallery-tall .object-gallery-right img {
+    height: 380px;
+}
+/* Uneven three-image layout */
+.object-image-three-uneven {
+    grid-template-columns: 0.35fr 1.4fr 1fr;
+}
+/* Details beside tall image */
+.object-gallery-tall {
+    grid-template-columns: 1fr 0.35fr;
+    margin-top: 5px;
+}
+.object-gallery-tall .object-gallery-right img {
+    height: 380px;
 }
 
 /* ETERNA BRACELET SPECIFICS */
@@ -706,12 +724,6 @@ h1 {
 /* ETERNA PACKAGING SPECIFICS */
 .eterna-packaging-page .object-image-pair:first-of-type {
     margin-top: 0;
-}
-.packaging-details-images {
-    grid-template-columns: repeat(3, 1fr);
-}
-.eterna-packaging-page .object-description + .object-image-pair img {
-    height: 200px;
 }
 .packaging-info {
     display: flex;
