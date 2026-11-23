@@ -639,6 +639,13 @@ h1 {
     background: #1f1f1f;
     color: white;
 }
+
+/* TOP THREE IMAGE LAYOUT (MORF)*/
+.chipboard-morf-page .object-image-pair {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 0;
+}
+
 /* MOBILE */
 @media (max-width: 600px) {
     .object-heading h1 {
