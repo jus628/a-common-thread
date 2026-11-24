@@ -660,9 +660,6 @@ h1 {
     grid-template-columns: 1fr 0.35fr;
     margin-top: 5px;
 }
-.object-gallery-tall .object-gallery-right img {
-    height: 380px;
-}
 
 /* FOUR IMAGE ROW */
 .object-image-four {
@@ -796,6 +793,40 @@ h1 {
     object-fit: contain;
 }
 
+/* LETTER EXCHANGE SPECIFICS  */
+.object-image-scans {
+    width: 70%;
+    margin: 0 auto 35px;
+    gap: 12%;
+}
+.object-image-scans img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+/* Four-image detail gallery */
+.object-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.object-gallery-grid img {
+    height: auto;
+    aspect-ratio: 3 / 2;
+}
+
+/* LETTERFORM SPECIFICS  */
+.object-gallery-posters {
+    grid-template-columns: 0.6fr 1fr;
+}
+.object-gallery-posters .object-details {
+    padding: 7vw 0 0;
+}
+.object-gallery-posters .object-gallery-grid img {
+    height: auto;
+    aspect-ratio: 13 / 19;
+    object-fit: contain;
+}
+
 /* MOBILE */
 @media (max-width: 600px) {
     .object-heading h1 {
@@ -909,6 +940,14 @@ h1 {
     }
     .luggage-sticker-art img {
         height: 140px;
+    }
+    .object-image-scans {
+        width: 85%;
+        gap: 8%;
+        margin-bottom: 25px;
+    }
+    .object-gallery-posters {
+        grid-template-columns: 1fr;
     }
 }
 
