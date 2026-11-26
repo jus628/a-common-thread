@@ -11,3 +11,9 @@ p5 windo resize fucntion for resposnveness: https://p5js.org/reference/p5/window
 
 
 Used this to figure out transiton for hamburger to X for nav: https://stackoverflow.com/questions/44327105/three-dot-transform-into-x-symbol-using-css
+
+
+
+## Live Website
+
+https://jus628.github.io/a-common-thread/

@@ -29,7 +29,7 @@ function draw() {
     // Dotted lines for related projects
     connectCircles("suitcase", "luggage-tags", true);
     connectCircles("posters", "letter-exchange", true);
-    connectCircles("bracelet", "packaging");
+    connectCircles("bracelet", "packaging", true);
 }
 
 // p5 built in fucitonfor canvas when the browser window changes size
