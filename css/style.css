@@ -161,9 +161,9 @@ h1 {
     height: 800px;
 }
 .network-intro {
-    max-width: 80%;
-    font-size: 16px;
-    line-height: 1.5;
+    max-width: 700px;
+    font-size: 17px;
+    line-height: 1.6;
 }
 .network-intro p {
     margin: 8px 0;
