@@ -486,7 +486,7 @@ h1 {
     color: black;
     text-decoration: none;
 }
-.back-link:hover {
+.back-link:hover span {
     text-decoration: underline;
 }
 
@@ -946,7 +946,7 @@ h1 {
 .packaging-related strong {
     font-size: 16px;
 }
-.packaging-related:hover {
+.packaging-related:hover strong {
     text-decoration: underline;
 }
 
