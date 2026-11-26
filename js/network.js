@@ -26,12 +26,10 @@ function draw() {
     // Connections to wood
     connectCircles("wood", "glasses");
 
-    // Connection between Eterna projects
-    connectCircles("bracelet", "packaging");
-
     // Dotted lines for related projects
     connectCircles("suitcase", "luggage-tags", true);
     connectCircles("posters", "letter-exchange", true);
+    connectCircles("bracelet", "packaging");
 }
 
 // p5 built in fucitonfor canvas when the browser window changes size
